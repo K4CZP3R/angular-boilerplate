@@ -1,0 +1,17 @@
+<div class="main">
+  <app-navbar></app-navbar>
+  <!-- <app-profile-card></app-profile-card> -->
+
+  <!-- Main content without footer -->
+  <div *ngIf="!this.showMainLoader">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+
+  <app-loading *ngIf="this.showMainLoader" [showLoadingAfter]=100 [itsReallySlowAfter]=2500 [giveUpAfter]=10000
+    loadingElementName="{{mainLoaderPath}}"></app-loading>
+
+
+
+  <!-- Footer itself -->
+  <app-footer></app-footer>
+</div>
