@@ -3,5 +3,5 @@
   <h1 @fadeFromDownAnimation>{{loadingElementName}}</h1>
   <p @fadeInAnimation *ngIf="longerThanExpected > 1">It takes really long time...</p>
   <p @fadeInAnimation *ngIf="longerThanExpected >2">Try again later?</p>
-  <mat-progress-bar [mode]="longerThanExpected > 2 ? 'determinate' :'indeterminate'"></mat-progress-bar>
+  <!-- <mat-progress-bar [mode]="longerThanExpected > 2 ? 'determinate' :'indeterminate'"></mat-progress-bar> -->
 </div>

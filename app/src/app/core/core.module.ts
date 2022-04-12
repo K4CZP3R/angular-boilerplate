@@ -8,9 +8,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoadingComponent } from './components/loading/loading.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -18,15 +18,15 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     NavbarComponent,
     FooterComponent,
     LoadingComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     CoreRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatMenuModule,
+    MatButtonModule,
     MatIconModule,
-    MatProgressBarModule,
   ],
   bootstrap: [MainComponent],
 })

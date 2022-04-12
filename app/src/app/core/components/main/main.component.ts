@@ -4,6 +4,7 @@ import {
   RouteConfigLoadStart,
   Router,
 } from '@angular/router';
+import { fadeInAnimation } from '../../animations/fade-in.animation';
 
 @Component({
   selector: 'app-main',
